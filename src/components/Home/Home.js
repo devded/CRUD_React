@@ -3,6 +3,9 @@ import "./Home.css";
 import { Button, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { UserContext } from "../UserContext/UserContext";
+import AddRow from "../Test/AddRow";
+import UpdateRow from "../Test/UpdateRow";
+import AllRow from "../Test/AllRow";
 
 const Home = () => {
   const [users, setUser] = useContext(UserContext);
@@ -53,6 +56,10 @@ const Home = () => {
           ))}
         </tbody>
       </Table>
+
+      <AddRow/>
+      <UpdateRow/>
+      <AllRow/>
     </div>
   );
 };
